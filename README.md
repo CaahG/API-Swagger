@@ -1,6 +1,6 @@
 ## Testes de requisição de APIs para plataforma JsonPlaceHolder
 
-# Descritivo 🌸✨
+# Resumo 🌸✨
 
 Os testes propostos têm como objetivo validar o **status**, a **estrutura** e a **precisão** da resposta da API. Vamos garantir que tudo esteja perfeito! 💖
 
@@ -34,15 +34,32 @@ Os testes de interface do usuário Web contidos no repositório podem ser execut
 
 Siga os passos abaixo para rodar os testes no seu computador:
 
+Os testes podem ser executados localmente seguindo os passos abaixo:
 
+- Instale as dependências do NodeJS (https://nodejs.org/en)
+- Instale as dependências do Playwright através do comando npm no terminal: `npm install`
+- Clone o repositório de testes através do comando:
+
+  ```bash
+  git clone https://github.com/CaahG/jsonplaceholder---API.git
 
 
 
 
 ---
-# Testes Automatizados para a API JSONPlaceholder Este repositório contém testes automatizados para verificar a estrutura de dados e os status de resposta da API JSONPlaceholder. Os testes são realizados utilizando o Playwright e cobrem os seguintes cenários: - **Teste 1**: Valida a resposta do endpoint `/posts/1` para garantir que a resposta tenha o status 200 e que a estrutura do JSON esteja conforme esperado. - **Teste 2**: Valida a resposta do endpoint `/posts` para garantir que a resposta tenha o status 200, que o array não esteja vazio, e que cada item no array siga a estrutura correta. ### Como Rodar os Testes: 1. Clone o repositório. 2. Instale as dependências com `npm install`. 3. Execute os testes com `npx playwright test`. ### Objetivo: Esses testes têm como objetivo garantir a integridade da API, verificando que os dados retornados pelos endpoints estão corretos e seguem a estrutura esperada.
+Execute o comando de execução uma vez na pasta de arquivos:
 
-- Instale as dependências do **NodeJS** [aqui](https://nodejs.org/en) 💻
-- Instale as dependências do **Playwright** com o comando npm:
-  ```bash
+bash
+npx playwright test
+Para executar todos os testes simultaneamente ou;
+
+Execute o comando de execução para um único teste:
+
+bash
+npx playwright test tests/"nome do teste"
+2 - Interface do GitHub Actions:
+Acesse a URL do repositório: https://github.com/CaahG/jsonplaceholder---API
+Acesse a página "Actions".
+Clique em "Run All Tests" (Executar Todos os Testes), pois os testes foram configurados para serem executados manualmente.
+Clique em "playwright-report" e faça o download do arquivo de resultados na seção "Artifacts" (Artefatos).
   npm install
