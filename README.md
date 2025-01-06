@@ -42,24 +42,16 @@ Os testes podem ser executados localmente seguindo os passos abaixo:
 
   ```bash
   git clone https://github.com/CaahG/jsonplaceholder---API.git
+# Execute o comando de execução uma vez na pasta de arquivos:
 
-
-
-
----
-Execute o comando de execução uma vez na pasta de arquivos:
-
-bash
+```bash
 npx playwright test
-Para executar todos os testes simultaneamente ou;
 
-Execute o comando de execução para um único teste:
+- Para executar todos os testes simultaneamente ou;
 
-bash
-npx playwright test tests/"nome do teste"
-2 - Interface do GitHub Actions:
-Acesse a URL do repositório: https://github.com/CaahG/jsonplaceholder---API
-Acesse a página "Actions".
-Clique em "Run All Tests" (Executar Todos os Testes), pois os testes foram configurados para serem executados manualmente.
-Clique em "playwright-report" e faça o download do arquivo de resultados na seção "Artifacts" (Artefatos).
-  npm install
+### Executar os testes
+
+- Para executar todos os testes simultaneamente:
+
+```bash
+npx playwright test
